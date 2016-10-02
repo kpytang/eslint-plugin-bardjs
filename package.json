@@ -1,0 +1,30 @@
+{
+  "name": "eslint-plugin-bardjs",
+  "version": "0.0.2",
+  "description": "ESLint rules for bardjs",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "npm run test:unit --coverage && npm run check-coverage",
+    "test:unit": "istanbul test _mocha test -- --recursive",
+    "check-coverage": "istanbul check-coverage --statement 100 --branch 100 --function 100 --lines 100"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.2",
+    "mocha": "^3.0.0",
+    "eslint": "^3.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^2.0.0 || ^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kpytang/eslint-plugin-bardjs.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "bardjs"
+  ]
+}
